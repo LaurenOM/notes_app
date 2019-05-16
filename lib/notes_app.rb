@@ -15,4 +15,12 @@ class NotesList
 			puts "#{hash[:title]}"
 		end
 	end
+
+	def display(title)
+		@notes.each do |hash|
+			if title = :title 
+				return hash
+			end
+		end
+	end
 end
